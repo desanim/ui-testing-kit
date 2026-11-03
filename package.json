@@ -1,0 +1,15 @@
+{
+  "name": "ui-testing-kit",
+  "version": "1.0.0",
+  "description": "Runnable UI testing kit: demo checkout app + Playwright usability-as-code + Axe accessibility tests (WCAG 2.2 AA)",
+  "scripts": {
+    "start": "node server.js",
+    "test": "playwright test",
+    "test:a11y": "playwright test tests/a11y.spec.ts",
+    "test:usability": "playwright test tests/checkout.spec.ts"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.9.0",
+    "@playwright/test": "^1.49.0"
+  }
+}

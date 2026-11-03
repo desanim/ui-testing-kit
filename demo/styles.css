@@ -1,0 +1,8 @@
+:focus-visible { outline: 3px solid #005fcc; outline-offset: 2px; }
+.skip-link { position: absolute; left: -9999px; }
+.skip-link:focus { left: 8px; top: 8px; background: #fff; padding: 8px; }
+body { font-family: system-ui, sans-serif; max-width: 640px; margin: 0 auto; padding: 16px; }
+#order-summary { position: sticky; top: 0; background: #f5f5f5; border: 1px solid #333; padding: 12px; }
+#order-summary p { color: #1a1a1a; }
+button { min-height: 44px; min-width: 44px; font-size: 1rem; }
+#error, #voucher-msg { color: #b00020; font-weight: bold; }

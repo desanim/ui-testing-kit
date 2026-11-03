@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Shop — Checkout (R2 fixed build)</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header><h1>Demo Shop</h1></header>
+<main id="main">
+  <!-- Step 1: Product -->
+  <section id="step-product" aria-labelledby="h-product">
+    <h2 id="h-product">Headphones — $19.99, free shipping</h2>
+    <p id="fee-note-top">Shipping: <strong id="fee-top">$5.00</strong> (always shown — R1 fix for hidden fee)</p>
+    <button id="add-to-cart" type="button">Add to cart and go to checkout</button>
+  </section>
+
+  <!-- Step 2: Checkout -->
+  <section id="step-checkout" aria-labelledby="h-checkout" hidden>
+    <h2 id="h-checkout">Checkout</h2>
+    <div id="order-summary" role="region" aria-label="Order summary" tabindex="0">
+      <p>Headphones: $19.99</p>
+      <p>Shipping: <span id="fee-summary">$5.00</span></p>
+      <p>Total: <strong id="total">$24.99</strong></p>
+    </div>
+    <label for="voucher">Voucher code</label>
+    <input id="voucher" type="text" autocomplete="off">
+    <button id="apply-voucher" type="button" aria-label="Apply voucher code">Apply code</button>
+    <p id="voucher-msg" role="alert"></p>
+    <label for="address">Delivery address</label>
+    <select id="address">
+      <option value="home">Home — 123 Main St</option>
+      <option value="office">Office — 456 Work Ave</option>
+    </select>
+    <fieldset>
+      <legend>Payment method</legend>
+      <label><input type="radio" name="pay" value="card" checked> Card</label>
+      <label><input type="radio" name="pay" value="momo"> E-wallet</label>
+    </fieldset>
+    <span id="date-label">Delivery date</span>
+    <button id="date" type="button" aria-labelledby="date-label" aria-haspopup="dialog" aria-expanded="false">Pick a date (Esc closes)</button>
+    <div id="datepicker" role="dialog" aria-label="Choose delivery date" hidden>
+      <button type="button" data-day="Mon">Mon</button>
+      <button type="button" data-day="Tue">Tue</button>
+      <button type="button" data-day="Wed">Wed</button>
+    </div>
+    <button id="place-order" type="button">Place order</button>
+  </section>
+
+  <!-- Step 3: Confirmation -->
+  <section id="step-done" aria-labelledby="h-done" hidden>
+    <h2 id="h-done" tabindex="-1">Order confirmed</h2>
+    <p id="done-msg" role="status"></p>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
