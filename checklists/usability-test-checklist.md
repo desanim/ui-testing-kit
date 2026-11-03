@@ -1,0 +1,11 @@
+# Usability Test Checklist (mang vào buổi test)
+- [ ] Prototype đã freeze version, ghi vào test plan
+- [ ] Task viết dạng goal + context (không chỉ steps), đã pilot 1 session nội bộ
+- [ ] Thứ tự task đã randomize, định nghĩa Complete/Partial/Fail trước
+- [ ] Consent + NDA + incentive sẵn sàng, lịch 45-60p/session, 30p nghỉ giữa session
+- [ ] Mic/camera ghi hình test trước 10p, có link prototype dự phòng + 4G
+- [ ] Observer có note template: Observation → Quote nguyên văn → Timestamp
+- [ ] Facilitation: im lặng 5s trước khi can thiệp, probe trung lập ("Điều gì khiến bạn nghĩ vậy?")
+- [ ] Không: xin lỗi về design, giải thích design, dạy user dùng
+- [ ] Sau mỗi task hỏi SEQ 1-7, cuối session chấm SUS
+- [ ] Loại data rác (unmoderated): session <30% median time, straight-lining
