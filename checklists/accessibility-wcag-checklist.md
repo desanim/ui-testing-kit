@@ -1,15 +1,15 @@
 # Accessibility Audit Checklist — WCAG 2.2 AA
-## Lớp 1 — Automated (15p, chạy đầu tiên mọi màn)
-- [ ] Axe DevTools: 0 Critical/Serious, export rule ID
-- [ ] Lighthouse + WAVE, test cả mobile 360px
+## Layer 1 — Automated (15 min, run first on every screen)
+- [ ] Axe DevTools: 0 Critical/Serious, export rule IDs
+- [ ] Lighthouse + WAVE, test mobile 360px too
 
-## Lớp 2 — Manual (core, không skip)
-- [ ] Keyboard-only full flow: Tab hết, focus visible (2.4.7), focus order logic (2.4.3), không trap (2.1.2)
-- [ ] Screen reader NVDA/VoiceOver: landmarks, heading, button có accessible name (4.1.2), lỗi form được announced (3.3.1/4.1.3)
-- [ ] Zoom 200% + reflow 320px: không mất nội dung, không scroll 2 chiều (1.4.10)
-- [ ] Contrast text trên ảnh check tay (Axe hay miss) — text thường ≥4.5:1 (1.4.3)
-- [ ] Target size ≥24px (2.5.8), tôn trọng prefers-reduced-motion
+## Layer 2 — Manual (core, never skip)
+- [ ] Full keyboard-only pass: Tab through everything, visible focus (2.4.7), logical focus order (2.4.3), no traps (2.1.2)
+- [ ] NVDA/VoiceOver screen reader: landmarks, headings, buttons have accessible names (4.1.2), form errors announced (3.3.1/4.1.3)
+- [ ] 200% zoom + 320px reflow: no lost content, no 2D scrolling (1.4.10)
+- [ ] Hand-check contrast for text over images (Axe often misses) — body text ≥4.5:1 (1.4.3)
+- [ ] Target size ≥24px (2.5.8), respect prefers-reduced-motion
 
-## Lớp 3 — AT users (nếu recruit được)
-- [ ] 2-3 tasks core bằng screen reader thật, log blocker nguyên văn
-- [ ] Re-test sau fix trên đúng build: pass Axe + manual mới mark Verified
+## Layer 3 — AT users (if recruited)
+- [ ] 2–3 core tasks with real screen-reader users, log blockers verbatim
+- [ ] Re-test after fixes on the exact build: only mark Verified after Axe + manual pass
